@@ -1,0 +1,8 @@
+<h1><%= @post.title %></h1>
+<p>Bru: <%= @post.bru_name %></p>
+<p><%= @post.body %></p><br>
+<p><%= link_to 'Edit', edit_post_path(@post) %> |
+<%= link_to 'Back', posts_path %> | 
+<%= link_to 'Delete', post_path(@post),
+								method: :delete, 
+								data: { confirm: 'Are you sure?' } %></p>
